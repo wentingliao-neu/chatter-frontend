@@ -1,4 +1,5 @@
 import { API_URL } from "../constants/urls";
+import { commonFetch } from "../utils/fetch";
 
 export const useLogout = () => {
    const logout = async () => {
