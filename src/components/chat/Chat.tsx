@@ -48,12 +48,9 @@ export const Chat = () => {
    }, []);
 
    useEffect(() => {
-      console.log(messages?.messages);
       if (messages?.messages && messages.messages.length <= PAGE_SIZE) {
          setMessage("");
          scrollToBottom();
-         console.log(messages?.messages.length);
-         console.log("scrolling to bottom");
       }
    }, [location.pathname, messages]);
 

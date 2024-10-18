@@ -40,7 +40,6 @@ export default function Signup() {
                await login({ email, password });
                setError("");
             } catch (error) {
-               console.log(error);
                const errorMessage = extractErrorMessage(error);
                if (errorMessage) {
                   setError(errorMessage);

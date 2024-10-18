@@ -7,7 +7,6 @@ import { commonFetch } from "../../utils/fetch";
 
 export default function Profile() {
    const me = useGetMe();
-   console.log(me);
    async function handleFileUpload(event: any) {
       try {
          const formData = new FormData();

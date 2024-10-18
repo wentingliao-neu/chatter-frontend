@@ -19,13 +19,9 @@ const logoutLink = onError((error) => {
             }
          ).statusCode === 401
       ) {
-         console.log(window.location.pathname);
-         console.log(excludedRoutes);
          if (!excludedRoutes.includes(window.location.pathname)) {
-            console.log("logout executed");
             onLogout();
          } else {
-            console.log("logout not executed");
             return;
          }
       }

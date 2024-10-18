@@ -9,7 +9,6 @@ export const useLogout = () => {
       if (!res.ok) {
          throw new Error("Failed to logout");
       }
-      console.log("uselogout");
    };
    return { logout };
 };
